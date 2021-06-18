@@ -28,21 +28,16 @@
         <div class="interno">
             <div class="maisinterno">
                 <h1>Entre em contato comigo</h1>
-
-                <form class="formulario" action="">
+                <form class="formulario">
                     <label for="nome">Nome</label><br>
-                    <input type="text" id="nome">
+                    <input type="text" id="nome" onkeyup="validaNome()">
+                    <div id="txtNome"></div>
                     <br>
-                    <br>
+
                     <label for="email">E-mail</label><br>
-                    <input type="email" id="email">
+                    <input type="email" id="email" onkeyup="validaEmail()">
+                    <div id="txtEmail"></div>
                     <br>
-                    <br>
-                    <label for="descricao">O que você deseja dizer</label><br>
-                    <textarea name="descricao" id="descricao" cols="60" rows="5" placeholder="texto..."></textarea>
-                    <br>
-                    <br>
-                    <button class="botao" id="enviar">Enviar</button>
 
                 </form>
                 <h2>Endereço:</h2>
@@ -62,7 +57,7 @@
              <div class= "texto">
                  Adicione-me nas minhas redes socias:
              </div>   
-            </footer>
+            
             <div class="container">
             </div>
          
@@ -74,10 +69,11 @@
             </a>
             <a href="https://www.instagram.com/thamy_honorato/" target="_blank">
                 <img class="tm-social -p20" src="assets/img/instagram.png" alt="Logo instagram">
-            </a>
-         
-        </div>
-    </div>
-</body>
 
+               </a>
+  
+            </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+        
 </html>
